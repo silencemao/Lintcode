@@ -3,10 +3,7 @@ package main.java;
 public class Leetcode_14_longestCommonPrefix {
     public static void main(String[] args){
         String[] strs = {"flow","flight","fllm"};
-        System.out.println(longestCommonPrefix1(strs));
-        String a = "nihaowo";
-        String b = "hao";
-        System.out.println(b.indexOf(a));
+        System.out.println(longestCommonPrefix2(strs));
     }
     public static String longestCommonPrefix1(String[] strs) {
         if(strs == null || strs.length == 0)    return "";
@@ -35,12 +32,12 @@ public class Leetcode_14_longestCommonPrefix {
         while (l1 < str1.length() && l2 < str2.length()){
             if (str1.charAt(l1) == str2.charAt(l2)){
                 prefix += str1.charAt(l1);
+                l1 ++;
+                l2 ++;
             }
             else {
-                break;
+                return prefix;
             }
-            l1 ++;
-            l2 ++;
         }
         return prefix;
     }
@@ -58,5 +55,28 @@ public class Leetcode_14_longestCommonPrefix {
             }
         }
         return prefix;
+    }
+
+    public static String longestCommonPrefix2(String[] strs){
+        if (strs.length < 1)
+            return "";
+        if (strs.length == 1)
+            return strs[0];
+        String result = "";
+        for (int i=1; i<strs[0].length(); i++){
+            String tmp = strs[0].substring(0, i);
+            boolean match = true;
+            for (int j=1; j<strs.length; j++){
+                if (i > strs[j].length() || !tmp.equals(strs[j].substring(0, i))){
+                    match = false;
+                    break;
+                }
+            }
+            if (!match)
+                return result;
+
+            result = tmp;
+        }
+        return result;
     }
 }
