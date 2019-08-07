@@ -17,7 +17,7 @@ public class Leetcode_29_divide {
         int res = 0, x = 0;
         boolean flag = (dividend>0) == (divisor>0);
 
-        dividend = Math.abs(dividend);
+        dividend = Math.abs(dividend);   // 最小的负数的绝对值是其本身 Math.abs(-2147483648) = -2147483648
         divisor = Math.abs(divisor);
 
         while (dividend-divisor >= 0){   // dividend >= divisor 就不对
