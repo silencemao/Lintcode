@@ -1,6 +1,8 @@
 package main.java;
 
-
+/**
+ * 从左上角到右下角走过的路径中的数字最小和
+ * */
 public class Leetcode_64_minPathSum {
     public static void main(String[] args){
         int[][] grid = {{1, 3, 1}, {1, 5, 1}, {4, 2, 1}};
