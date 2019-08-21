@@ -2,6 +2,7 @@ package main.java;
 
 /**
  * 在排序数组中找出与target最接近的数字
+ * https://www.jianshu.com/p/b0ce039d4660
  * */
 public class Lintcode_459_closestNumber {
     public static void main(String[] args){
