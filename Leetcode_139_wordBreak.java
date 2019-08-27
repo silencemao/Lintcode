@@ -27,4 +27,19 @@ public class Leetcode_139_wordBreak {
         }
         return f[s.length()];
     }
+
+    public static boolean wordBreak1(String s, List<String> wordDict){
+        Set<String> dict = new HashSet<>(wordDict);
+        int[] memo = new int[s.length()];
+        for (int i=0; i<s.length(); i++)
+            memo[i] = -1;
+        return check(s, dict, 0, memo);
+    }
+
+    public static boolean check(String s, Set<String> dict, int start, int[] memo){
+        if (start >= s.length()) return true;
+//        if (memo[start]==-1) return memo[start];
+        return false;
+
+    }
 }
