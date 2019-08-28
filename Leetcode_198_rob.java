@@ -25,5 +25,10 @@ public class Leetcode_198_rob {
         }
         return dp[nums.length-1];
     }
+    
+    public static void func(){
+    
+    }
+
 
 }
