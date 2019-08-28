@@ -1,4 +1,8 @@
 package main.java;
+
+import java.util.ArrayList;
+import java.util.Map;
+
 /**
  * https://leetcode.com/problems/house-robber/discuss/156523/From-good-to-great.-How-to-approach-most-of-DP-problems.
  * 店铺抢劫，相邻的店铺不能同时抢劫，所以能获得最多的钱是多少。
@@ -24,6 +28,14 @@ public class Leetcode_198_rob {
             dp[i] = Math.max(dp[i-2] + nums[i], dp[i-1]);
         }
         return dp[nums.length-1];
+    }
+
+    public static void test(Map<String, ArrayList<Integer>> capacity){
+        Map<String, ArrayList<Integer>> tmp;
+        for (Map.Entry<String, ArrayList<Integer>> entry : capacity.entrySet()){
+            
+        }
+
     }
 
 }
