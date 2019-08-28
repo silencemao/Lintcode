@@ -29,6 +29,11 @@ public class Leetcode_198_rob {
         }
         return dp[nums.length-1];
     }
+    
+    public static void func(){
+    
+    }
+
 
     public static void test(Map<String, ArrayList<Integer>> capacity){
         Map<String, ArrayList<Integer>> tmp;
