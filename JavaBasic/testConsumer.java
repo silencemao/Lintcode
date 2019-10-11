@@ -2,10 +2,10 @@ package main.java.JavaBasic;
 
 import java.util.*;
 import java.util.function.Consumer;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+// https://www.cnblogs.com/snowInPluto/p/5981400.html
 public class testConsumer {
     public static void main(String[] args) {
         testAccept();
