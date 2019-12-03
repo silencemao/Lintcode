@@ -1,4 +1,4 @@
-package main.java.JavaBasic;
+package main.java.example.JavaBasic;
 
 import java.util.*;
 import java.util.function.Consumer;
